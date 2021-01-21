@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Net.Http;
 
-namespace IntroductionwebservicesClient.Controller
+namespace IntroductionwebservicesClient.Service
 {
     public abstract class BaseService
     {

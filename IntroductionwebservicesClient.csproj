@@ -74,15 +74,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controller\BaseService.cs" />
-    <Compile Include="Controller\CourseService.cs" />
-    <Compile Include="Controller\dto\StudentDetailedDto.cs" />
-    <Compile Include="Controller\dto\CourseDto.cs" />
-    <Compile Include="Controller\dto\FormErrorDto.cs" />
-    <Compile Include="Controller\dto\StudentDto.cs" />
-    <Compile Include="Controller\form\CourseForm.cs" />
-    <Compile Include="Controller\form\StudentForm.cs" />
-    <Compile Include="Controller\StudentService.cs" />
+    <Compile Include="Service\BaseService.cs" />
+    <Compile Include="Service\CourseService.cs" />
+    <Compile Include="Service\dto\StudentDetailedDto.cs" />
+    <Compile Include="Service\dto\CourseDto.cs" />
+    <Compile Include="Service\dto\FormErrorDto.cs" />
+    <Compile Include="Service\dto\StudentDto.cs" />
+    <Compile Include="Service\form\CourseForm.cs" />
+    <Compile Include="Service\form\StudentForm.cs" />
+    <Compile Include="Service\StudentService.cs" />
     <Compile Include="Ui\DashboardUi.cs">
       <SubType>Form</SubType>
     </Compile>

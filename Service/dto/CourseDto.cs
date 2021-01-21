@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace IntroductionwebservicesClient.Controller.dto
+namespace IntroductionwebservicesClient.Service.dto
 {
     public class CourseDto
     {

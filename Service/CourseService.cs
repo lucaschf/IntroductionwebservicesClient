@@ -1,12 +1,12 @@
-﻿using IntroductionwebservicesClient.Controller.dto;
-using IntroductionwebservicesClient.Controller.form;
+﻿using IntroductionwebservicesClient.Service.dto;
+using IntroductionwebservicesClient.Service.form;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web.Script.Serialization;
 
-namespace IntroductionwebservicesClient.Controller
+namespace IntroductionwebservicesClient.Service
 {
     public class CourseService : BaseService 
     {

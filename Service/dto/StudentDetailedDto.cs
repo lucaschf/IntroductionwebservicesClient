@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace IntroductionwebservicesClient.Controller.dto
+namespace IntroductionwebservicesClient.Service.dto
 {
     public class StudentDetailedDto : StudentDto
     {

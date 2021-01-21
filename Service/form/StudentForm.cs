@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace IntroductionwebservicesClient.Controller.form
+namespace IntroductionwebservicesClient.Service.form
 {
     public class StudentForm
     {

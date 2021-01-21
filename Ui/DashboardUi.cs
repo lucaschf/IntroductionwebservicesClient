@@ -1,6 +1,6 @@
-﻿using IntroductionwebservicesClient.Controller;
-using IntroductionwebservicesClient.Controller.dto;
-using IntroductionwebservicesClient.Controller.form;
+﻿using IntroductionwebservicesClient.Service;
+using IntroductionwebservicesClient.Service.dto;
+using IntroductionwebservicesClient.Service.form;
 using System;
 using System.Net;
 using System.Windows.Forms;
@@ -22,7 +22,7 @@ namespace IntroductionwebservicesClient
 
         private void addCourseButton_Click(object sender, EventArgs e)
         {
-            new CourseService().InsertCourseAsync(new Controller.form.CourseForm
+            new CourseService().InsertCourseAsync(new CourseForm
             {
                 name = courseNameTextBox.Text,
                 year = int.Parse(courseYearTextBox.Text)

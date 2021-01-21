@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace IntroductionwebservicesClient.Controller.form
+namespace IntroductionwebservicesClient.Service.form
 {
     public class CourseForm
     {
