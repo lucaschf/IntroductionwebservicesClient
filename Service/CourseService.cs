@@ -28,12 +28,5 @@ namespace IntroductionwebservicesClient.Service
 
             return courses;
         }  
-        
-        public async Task<HttpResponseMessage> FetchAll1()
-        {
-            HttpResponseMessage response = await GetHttpClient().GetAsync("courses");
-            
-            return response;
-        }
     }
 }

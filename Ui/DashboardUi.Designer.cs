@@ -53,12 +53,12 @@ namespace IntroductionwebservicesClient
             this.year = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label14 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.statusPanel = new System.Windows.Forms.Panel();
-            this.serverStatusLabel = new System.Windows.Forms.Label();
-            this.progressBar = new System.Windows.Forms.ProgressBar();
             this.studentsCountPanel = new System.Windows.Forms.Panel();
             this.lblEnrolledCourseStudents = new System.Windows.Forms.Label();
             this.lblCourseStudents = new System.Windows.Forms.Label();
+            this.statusPanel = new System.Windows.Forms.Panel();
+            this.serverStatusLabel = new System.Windows.Forms.Label();
+            this.progressBar = new System.Windows.Forms.ProgressBar();
             this.studentsRegistrationTab = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
@@ -80,8 +80,8 @@ namespace IntroductionwebservicesClient
             ((System.ComponentModel.ISupportInitialize)(this.studentsGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.coursesGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.statusPanel.SuspendLayout();
             this.studentsCountPanel.SuspendLayout();
+            this.statusPanel.SuspendLayout();
             this.studentsRegistrationTab.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -365,34 +365,6 @@ namespace IntroductionwebservicesClient
             this.pictureBox3.TabIndex = 38;
             this.pictureBox3.TabStop = false;
             // 
-            // statusPanel
-            // 
-            this.statusPanel.Controls.Add(this.serverStatusLabel);
-            this.statusPanel.Controls.Add(this.progressBar);
-            this.statusPanel.Location = new System.Drawing.Point(381, 10);
-            this.statusPanel.Name = "statusPanel";
-            this.statusPanel.Size = new System.Drawing.Size(389, 107);
-            this.statusPanel.TabIndex = 46;
-            // 
-            // serverStatusLabel
-            // 
-            this.serverStatusLabel.AutoSize = true;
-            this.serverStatusLabel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.serverStatusLabel.Location = new System.Drawing.Point(0, 55);
-            this.serverStatusLabel.Name = "serverStatusLabel";
-            this.serverStatusLabel.Size = new System.Drawing.Size(146, 29);
-            this.serverStatusLabel.TabIndex = 45;
-            this.serverStatusLabel.Text = "Carregando...";
-            // 
-            // progressBar
-            // 
-            this.progressBar.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.progressBar.Location = new System.Drawing.Point(0, 84);
-            this.progressBar.Name = "progressBar";
-            this.progressBar.Size = new System.Drawing.Size(389, 23);
-            this.progressBar.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
-            this.progressBar.TabIndex = 44;
-            // 
             // studentsCountPanel
             // 
             this.studentsCountPanel.Controls.Add(this.lblEnrolledCourseStudents);
@@ -420,6 +392,34 @@ namespace IntroductionwebservicesClient
             this.lblCourseStudents.Size = new System.Drawing.Size(99, 29);
             this.lblCourseStudents.TabIndex = 44;
             this.lblCourseStudents.Text = "Alunos: -";
+            // 
+            // statusPanel
+            // 
+            this.statusPanel.Controls.Add(this.serverStatusLabel);
+            this.statusPanel.Controls.Add(this.progressBar);
+            this.statusPanel.Location = new System.Drawing.Point(381, 10);
+            this.statusPanel.Name = "statusPanel";
+            this.statusPanel.Size = new System.Drawing.Size(389, 107);
+            this.statusPanel.TabIndex = 46;
+            // 
+            // serverStatusLabel
+            // 
+            this.serverStatusLabel.AutoSize = true;
+            this.serverStatusLabel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.serverStatusLabel.Location = new System.Drawing.Point(0, 55);
+            this.serverStatusLabel.Name = "serverStatusLabel";
+            this.serverStatusLabel.Size = new System.Drawing.Size(146, 29);
+            this.serverStatusLabel.TabIndex = 45;
+            this.serverStatusLabel.Text = "Carregando...";
+            // 
+            // progressBar
+            // 
+            this.progressBar.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.progressBar.Location = new System.Drawing.Point(0, 84);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Size = new System.Drawing.Size(389, 23);
+            this.progressBar.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
+            this.progressBar.TabIndex = 44;
             // 
             // studentsRegistrationTab
             // 
@@ -581,10 +581,10 @@ namespace IntroductionwebservicesClient
             ((System.ComponentModel.ISupportInitialize)(this.studentsGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.coursesGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.statusPanel.ResumeLayout(false);
-            this.statusPanel.PerformLayout();
             this.studentsCountPanel.ResumeLayout(false);
             this.studentsCountPanel.PerformLayout();
+            this.statusPanel.ResumeLayout(false);
+            this.statusPanel.PerformLayout();
             this.studentsRegistrationTab.ResumeLayout(false);
             this.studentsRegistrationTab.PerformLayout();
             this.panel1.ResumeLayout(false);
