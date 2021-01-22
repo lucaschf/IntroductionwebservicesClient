@@ -73,6 +73,16 @@ namespace IntroductionwebservicesClient.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap database_down {
+            get {
+                object obj = ResourceManager.GetObject("database_down", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap girl {
             get {
                 object obj = ResourceManager.GetObject("girl", resourceCulture);

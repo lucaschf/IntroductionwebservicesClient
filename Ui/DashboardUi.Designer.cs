@@ -29,13 +29,10 @@ namespace IntroductionwebservicesClient
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashboardUi));
             this.courseRegistrationTab = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
             this.courseNameTextBox = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.addCourseButton = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -45,8 +42,6 @@ namespace IntroductionwebservicesClient
             this.tabControl = new System.Windows.Forms.TabControl();
             this.dashboardTab = new System.Windows.Forms.TabPage();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.lblEnrolledCourseStudents = new System.Windows.Forms.Label();
-            this.lblCourseStudents = new System.Windows.Forms.Label();
             this.studentsGridView = new System.Windows.Forms.DataGridView();
             this.studentId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,11 +51,9 @@ namespace IntroductionwebservicesClient
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.year = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label14 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.studentsRegistrationTab = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.addStudentButton = new System.Windows.Forms.Button();
             this.enrolledCheckbox = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -69,19 +62,29 @@ namespace IntroductionwebservicesClient
             this.studentNameTextbox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.progressBar = new System.Windows.Forms.ProgressBar();
+            this.studentsCountPanel = new System.Windows.Forms.Panel();
+            this.lblEnrolledCourseStudents = new System.Windows.Forms.Label();
+            this.lblCourseStudents = new System.Windows.Forms.Label();
+            this.statusPanel = new System.Windows.Forms.Panel();
+            this.serverStatusLabel = new System.Windows.Forms.Label();
             this.courseRegistrationTab.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabControl.SuspendLayout();
             this.dashboardTab.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.studentsGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.coursesGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.studentsRegistrationTab.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.studentsCountPanel.SuspendLayout();
+            this.statusPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // courseRegistrationTab
@@ -132,16 +135,6 @@ namespace IntroductionwebservicesClient
             this.label8.Size = new System.Drawing.Size(264, 37);
             this.label8.TabIndex = 39;
             this.label8.Text = "Cadastro de Turmas";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::IntroductionwebservicesClient.Properties.Resources.classroom;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(36, 36);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox2.TabIndex = 38;
-            this.pictureBox2.TabStop = false;
             // 
             // addCourseButton
             // 
@@ -239,35 +232,17 @@ namespace IntroductionwebservicesClient
             // 
             this.panel3.AutoSize = true;
             this.panel3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panel3.Controls.Add(this.lblEnrolledCourseStudents);
-            this.panel3.Controls.Add(this.lblCourseStudents);
             this.panel3.Controls.Add(this.studentsGridView);
             this.panel3.Controls.Add(this.coursesGridView);
             this.panel3.Controls.Add(this.label14);
             this.panel3.Controls.Add(this.pictureBox3);
+            this.panel3.Controls.Add(this.statusPanel);
+            this.panel3.Controls.Add(this.studentsCountPanel);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(20, 20);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(776, 380);
             this.panel3.TabIndex = 2;
-            // 
-            // lblEnrolledCourseStudents
-            // 
-            this.lblEnrolledCourseStudents.AutoSize = true;
-            this.lblEnrolledCourseStudents.Location = new System.Drawing.Point(378, 87);
-            this.lblEnrolledCourseStudents.Name = "lblEnrolledCourseStudents";
-            this.lblEnrolledCourseStudents.Size = new System.Drawing.Size(238, 29);
-            this.lblEnrolledCourseStudents.TabIndex = 43;
-            this.lblEnrolledCourseStudents.Text = "Alunos matriculados: 5";
-            // 
-            // lblCourseStudents
-            // 
-            this.lblCourseStudents.AutoSize = true;
-            this.lblCourseStudents.Location = new System.Drawing.Point(378, 54);
-            this.lblCourseStudents.Name = "lblCourseStudents";
-            this.lblCourseStudents.Size = new System.Drawing.Size(116, 29);
-            this.lblCourseStudents.TabIndex = 42;
-            this.lblCourseStudents.Text = "Alunos: 10";
             // 
             // studentsGridView
             // 
@@ -370,16 +345,6 @@ namespace IntroductionwebservicesClient
             this.label14.TabIndex = 39;
             this.label14.Text = "Listagem de Turmas";
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::IntroductionwebservicesClient.Properties.Resources.classroom;
-            this.pictureBox3.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(36, 36);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox3.TabIndex = 38;
-            this.pictureBox3.TabStop = false;
-            // 
             // studentsRegistrationTab
             // 
             this.studentsRegistrationTab.Controls.Add(this.panel1);
@@ -420,16 +385,6 @@ namespace IntroductionwebservicesClient
             this.label5.Size = new System.Drawing.Size(255, 37);
             this.label5.TabIndex = 39;
             this.label5.Text = "Cadastro de alunos";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::IntroductionwebservicesClient.Properties.Resources.girl;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(36, 36);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 38;
-            this.pictureBox1.TabStop = false;
             // 
             // addStudentButton
             // 
@@ -512,11 +467,91 @@ namespace IntroductionwebservicesClient
             this.label1.TabIndex = 30;
             this.label1.Text = "Turma:";
             // 
-            // imageList1
+            // pictureBox3
             // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "girl.png");
+            this.pictureBox3.Image = global::IntroductionwebservicesClient.Properties.Resources.classroom;
+            this.pictureBox3.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(36, 36);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox3.TabIndex = 38;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::IntroductionwebservicesClient.Properties.Resources.classroom;
+            this.pictureBox2.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(36, 36);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox2.TabIndex = 38;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::IntroductionwebservicesClient.Properties.Resources.girl;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(36, 36);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 38;
+            this.pictureBox1.TabStop = false;
+            // 
+            // progressBar
+            // 
+            this.progressBar.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.progressBar.Location = new System.Drawing.Point(0, 84);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Size = new System.Drawing.Size(389, 23);
+            this.progressBar.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
+            this.progressBar.TabIndex = 44;
+            // 
+            // studentsCountPanel
+            // 
+            this.studentsCountPanel.Controls.Add(this.lblEnrolledCourseStudents);
+            this.studentsCountPanel.Controls.Add(this.lblCourseStudents);
+            this.studentsCountPanel.Location = new System.Drawing.Point(380, 54);
+            this.studentsCountPanel.Name = "studentsCountPanel";
+            this.studentsCountPanel.Size = new System.Drawing.Size(387, 63);
+            this.studentsCountPanel.TabIndex = 45;
+            this.studentsCountPanel.Visible = false;
+            // 
+            // lblEnrolledCourseStudents
+            // 
+            this.lblEnrolledCourseStudents.AutoSize = true;
+            this.lblEnrolledCourseStudents.Location = new System.Drawing.Point(3, 33);
+            this.lblEnrolledCourseStudents.Name = "lblEnrolledCourseStudents";
+            this.lblEnrolledCourseStudents.Size = new System.Drawing.Size(238, 29);
+            this.lblEnrolledCourseStudents.TabIndex = 45;
+            this.lblEnrolledCourseStudents.Text = "Alunos matriculados: 5";
+            // 
+            // lblCourseStudents
+            // 
+            this.lblCourseStudents.AutoSize = true;
+            this.lblCourseStudents.Location = new System.Drawing.Point(3, 0);
+            this.lblCourseStudents.Name = "lblCourseStudents";
+            this.lblCourseStudents.Size = new System.Drawing.Size(116, 29);
+            this.lblCourseStudents.TabIndex = 44;
+            this.lblCourseStudents.Text = "Alunos: 10";
+            // 
+            // statusPanel
+            // 
+            this.statusPanel.Controls.Add(this.serverStatusLabel);
+            this.statusPanel.Controls.Add(this.progressBar);
+            this.statusPanel.Location = new System.Drawing.Point(381, 10);
+            this.statusPanel.Name = "statusPanel";
+            this.statusPanel.Size = new System.Drawing.Size(389, 107);
+            this.statusPanel.TabIndex = 46;
+            // 
+            // serverStatusLabel
+            // 
+            this.serverStatusLabel.AutoSize = true;
+            this.serverStatusLabel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.serverStatusLabel.Location = new System.Drawing.Point(0, 55);
+            this.serverStatusLabel.Name = "serverStatusLabel";
+            this.serverStatusLabel.Size = new System.Drawing.Size(146, 29);
+            this.serverStatusLabel.TabIndex = 45;
+            this.serverStatusLabel.Text = "Carregando...";
             // 
             // DashboardUi
             // 
@@ -537,7 +572,6 @@ namespace IntroductionwebservicesClient
             this.courseRegistrationTab.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabControl.ResumeLayout(false);
             this.dashboardTab.ResumeLayout(false);
             this.dashboardTab.PerformLayout();
@@ -545,12 +579,17 @@ namespace IntroductionwebservicesClient
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.studentsGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.coursesGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.studentsRegistrationTab.ResumeLayout(false);
             this.studentsRegistrationTab.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.studentsCountPanel.ResumeLayout(false);
+            this.studentsCountPanel.PerformLayout();
+            this.statusPanel.ResumeLayout(false);
+            this.statusPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -558,7 +597,6 @@ namespace IntroductionwebservicesClient
         #endregion
         private System.Windows.Forms.TabPage courseRegistrationTab;
         private System.Windows.Forms.TabControl tabControl;
-        private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.TabPage studentsRegistrationTab;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label8;
@@ -586,8 +624,6 @@ namespace IntroductionwebservicesClient
         private System.Windows.Forms.DataGridView coursesGridView;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label lblEnrolledCourseStudents;
-        private System.Windows.Forms.Label lblCourseStudents;
         private System.Windows.Forms.DataGridView studentsGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn id;
         private System.Windows.Forms.DataGridViewTextBoxColumn name;
@@ -595,6 +631,12 @@ namespace IntroductionwebservicesClient
         private System.Windows.Forms.DataGridViewTextBoxColumn studentId;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewCheckBoxColumn enrolled;
+        private System.Windows.Forms.Panel studentsCountPanel;
+        private System.Windows.Forms.Label lblEnrolledCourseStudents;
+        private System.Windows.Forms.Label lblCourseStudents;
+        private System.Windows.Forms.ProgressBar progressBar;
+        private System.Windows.Forms.Panel statusPanel;
+        private System.Windows.Forms.Label serverStatusLabel;
     }
 }
 

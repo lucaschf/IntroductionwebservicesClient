@@ -27,6 +27,13 @@ namespace IntroductionwebservicesClient.Service
             var courses = await response.Content.ReadAsAsync<List<CourseDto>>();
 
             return courses;
+        }  
+        
+        public async Task<HttpResponseMessage> FetchAll1()
+        {
+            HttpResponseMessage response = await GetHttpClient().GetAsync("courses");
+            
+            return response;
         }
     }
 }
